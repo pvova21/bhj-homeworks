@@ -4,7 +4,7 @@ const viewPortSize = window.innerHeight;
 window.addEventListener('scroll', function() {
   for (let item of banners) {
     const ads = {tob, bottom} = item.getBoundingClientRect(); 
-      if ((viewPortSize - ads.top - 100 >= 0) && (ads.bottom - 400 <= 0)) { 
+      if ((viewPortSize - ads.top - 200 >= 0) && (ads.bottom - 300 <= 0)) { 
     item.classList.add('reveal_active');
       }
       else {
